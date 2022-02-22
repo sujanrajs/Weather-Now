@@ -55,7 +55,7 @@ const Homepage = () => {
         {!!currentWeather &&
           currentWeather.map((i, index) => (
             <div className="city_weather_info" key={index}>
-              <h1 className="header">{location}</h1>
+              <h2 className="header">{location}</h2>
               <CurrentWeather
                 currentTemp={i.currentTemp}
                 weatherType={i.weatherType}
