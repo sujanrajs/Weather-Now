@@ -8,7 +8,7 @@ const CurrentWeather = ({ currentTemp, weatherIcon, weatherType }) => {
       <div>
         <img
           alt="weatherIcon"
-          src={`https://developer.accuweather.com/sites/default/files/${weatherIcon}-s.png`}
+          src={`https://the-ultimate-api-challenge.herokuapp.com/https://developer.accuweather.com/sites/default/files/${weatherIcon}-s.png`}
         />
       </div>
       <div>{weatherType}</div>
