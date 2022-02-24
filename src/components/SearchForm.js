@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { apikey } from "../data/Constants";
+import { apikey, baseUrl } from "../data/Constants";
 import "./searchForm.css";
 
 const SearchForm = ({ onCityExist }) => {
 	const [city, setCity] = useState("");
 
 	const getCity = (cityName) => {
-		const url = `https://dataservice.accuweather.com/locations/v1/search?apikey=${apikey}&q=${cityName}`;
+		const url = `${baseUrl}/locations/v1/search?apikey=${apikey}&q=${cityName}`;
 		if (city) {
 			fetch(url)
 				.then((res) => res.json())

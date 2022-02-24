@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { apikey } from "../data/Constants";
+import { apikey, baseUrl } from "../data/Constants";
 import CurrentWeather from "./CurrentWeather";
 import SearchForm from "./SearchForm";
 import "./homepage.css";
@@ -23,7 +23,7 @@ const Homepage = () => {
 	useEffect(() => {
 		if (locationKey) {
 			fetch(
-					`https://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apikey}`
+					`${baseUrl}/currentconditions/v1/${locationKey}?apikey=${apikey}`
 			)
 				.then((res) => res.json())
 				.then((res) => {
