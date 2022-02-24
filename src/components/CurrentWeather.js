@@ -1,10 +1,10 @@
 import React from "react";
 import "./currentWeather.css";
 
-const CurrentWeather = ({ currentTemp, weatherIcon, weatherType }) => {
+const CurrentWeather = ({ currentTemp, currentUnit, weatherIcon, weatherType }) => {
   return (
     <div>
-      <div className="current_temp">{currentTemp}&deg;C</div>
+      <div className="current_temp">{currentTemp}&deg;{currentUnit}</div>
       <div className="image-container">
         <img
           alt="weatherIcon"
