@@ -45,7 +45,7 @@ const Homepage = () => {
       <SearchForm
         onCityExist={(cityInfo) => {
           if(cityInfo.key === null || cityInfo.key === undefined) {
-            alert("City Not Found")
+            alert("City Not Found ! Please Enter Valid City Name")
           }
           setLocationKey(cityInfo.key);
           setLocation(cityInfo.name + ", " + cityInfo.country);
