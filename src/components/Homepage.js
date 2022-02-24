@@ -23,7 +23,7 @@ const Homepage = () => {
   useEffect(() => {
     if (locationKey) {
       fetch(
-        `https://the-ultimate-api-challenge.herokuapp.com/http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apikey}`
+        `https://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apikey}`
       )
         .then((res) => res.json())
         .then((res) => {
