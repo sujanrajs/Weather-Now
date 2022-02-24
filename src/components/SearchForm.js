@@ -6,7 +6,7 @@ const SearchForm = ({ onCityExist }) => {
   const [city, setCity] = useState("");
 
   const getCity = (cityName) => {
-    const url = `https://the-ultimate-api-challenge.herokuapp.com/https://dataservice.accuweather.com/locations/v1/search?apikey=${apikey}&q=${cityName}`;
+    const url = `https://dataservice.accuweather.com/locations/v1/search?apikey=${apikey}&q=${cityName}`;
     if (city) {
       fetch(url)
         .then((res) => res.json())
