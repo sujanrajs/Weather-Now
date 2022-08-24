@@ -1,15 +1,5 @@
 # Live deployment link
-[Live demo](https://sujan-current-weather.netlify.app/)
+## [Please click here](https://sujan-current-weather.netlify.app/) for live demonstration
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## This web app fetch weather data from accu weather API https://developer.accuweather.com/
+## This was built using HTML | React | CSS
